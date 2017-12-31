@@ -1,9 +1,16 @@
 .NYC{
 	font-size:50px;
 	text-align: center;
+	color: #ff0000;
+	font-family: Georgia, serif;
+	font-weight: bold;
 }
 
 body{
+	color: #ff0000;
+	font-family: Georgia, serif;
+	font-weight: bold;
+
 	
 }
 
@@ -19,6 +26,7 @@ body{
 
 h3 {
 	text-align: center;
+	color: #ff0000;
 	
 }
 
@@ -27,7 +35,21 @@ h3 {
 
 }
 
-img.displayed {
-	
-
+#startButton {
+	background-color: #ff0000;
+	color: black;
+	border-color: #ff0000
 }
+
+img {
+	/*float: right;*/
+}
+
+.card-body {
+	margin-bottom: 100px;
+	/*background-color: grey;*/
+}
+
+
+
+

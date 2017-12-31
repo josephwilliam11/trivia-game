@@ -1,7 +1,10 @@
-var questions = ['What did Cramer name his pet rooster that he thought was a chicken?' , 'What is the name of the seasonal holiday Georges father invented?' , 'Who catches Jerry and his girlfriend making out during Shildlers List?'];
+//var questions = ['What did Cramer name his pet rooster that he thought was a chicken?' , 'What is the name of the seasonal holiday Georges father invented?' , 'Who catches Jerry and his girlfriend making out during Shildlers List?'];
 
-var triviaQuestions = questions[Math.floor(Math.random() * questions.length)];
-console.log(triviaQuestions);
+//var triviaQuestions = questions[Math.floor(Math.random() * questions.length)];
+//console.log(triviaQuestions);
+var question1 = "What did Cramer name his pet rooster that he thought was a chicken?";
+var question2 = "What is the name of the seasonal holiday Georges father invented?";
+var question3 = "Who catches Jerry and his girlfriend making out during Shildlers List?";
 
 
 var choices1A = "Newman";
@@ -10,16 +13,16 @@ var choices1C = "El Pollo Loco";
 var choices1D = "Lois"; 
 
 
-var choices2A = "Bestmas";
-var choices2B = "International Greivances Day"; 
-var choices2C = "Festivus";
-var choices2D = "The Feats of Strength";
+// var choices2A = "Bestmas";
+// var choices2B = "International Greivances Day"; 
+// var choices2C = "Festivus";
+// var choices2D = "The Feats of Strength";
 
 
-var choices3A = "Newman";
-var choices3B = "Bania";
-var choices3C = "J. Peterman";
-var choices3D = "David Puddy";
+// var choices3A = "Newman";
+// var choices3B = "Bania";
+// var choices3C = "J. Peterman";
+// var choices3D = "David Puddy";
 
 
 
@@ -34,14 +37,16 @@ var interval = setInterval(function() {
     
     if (counter == 0) {
         clearInterval(interval);
+        //console.log("joe");
+        //$("#questions").html("joe");
     }
 }, 1000);
-for(var i = 0; i < questions.length; i++) {
-$("#questions").html(triviaQuestions);
+//for(var i = 0; i < questions.length; i++) {
+$("#questions").html(question1);
 
- }
+ //}
 
- if (triviaQuestions === questions[0]) {
+ if (question1) {
  	$("#answer1").html(choices1A);
  	$("#answer2").html(choices1B);
  	$("#answer3").html(choices1C);
@@ -59,14 +64,15 @@ $("#questions").html(triviaQuestions);
  		$("#questions").html("CORRECT!");
  		//var image = $("<img>").attr("src", imgURL);
  		$("#choices").html('<img id="text-center" src="assets/images/littleJerry.gif"/>');
+
  		setTimeout(
  			function(){
- 				var triviaQuestions = questions[Math.floor(Math.random() * questions.length)];
-				$("#questions").html(triviaQuestions);
+ 	
  			},
  			3000
  			);
  	});
+
  	$("#answer3").click(function() {
  		$("#questions").html("WRONG!");
  		$("#choices").html()
@@ -76,11 +82,11 @@ $("#questions").html(triviaQuestions);
  	});
  }
 
- if (triviaQuestions === questions[1]) {
- 	$("#answer1").html(choices2A);
- 	$("#answer2").html(choices2B);
- 	$("#answer3").html(choices2C);
- 	$("#answer4").html(choices2D);
+ if (question2) {
+ 	// $("#answer1").html(choices2A);
+ 	// $("#answer2").html(choices2B);
+ 	// $("#answer3").html(choices2C);
+ 	// $("#answer4").html(choices2D);
 
  	$("#answer1").click(function() {
  		$("#questions").html("WRONG!");
@@ -97,11 +103,11 @@ $("#questions").html(triviaQuestions);
  	});
  }
 
- if (triviaQuestions === questions[2]) {
- 	$("#answer1").html(choices3A);
- 	$("#answer2").html(choices3B);
- 	$("#answer3").html(choices3C);
- 	$("#answer4").html(choices3D);
+ if (question3) {
+ 	// $("#answer1").html(choices3A);
+ 	// $("#answer2").html(choices3B);
+ 	// $("#answer3").html(choices3C);
+ 	// $("#answer4").html(choices3D);
 
  	$("#answer1").click(function() {
  		$("#questions").html("CORRECT!");
